@@ -17,7 +17,16 @@ def sort_temp(temp_list):
 def cal_min_max_temp(temp_list):
     return [int(temp_list[0]), int(temp_list[-1])]
 
+def cal_median_temp(temp_list):
+    #print(temp_list)
+    if(len(temp_list)%2): #if list is odd in length
+        return temp_list[int(len(temp_list)/2)]
+    else:
+        index=int(len(temp_list)/2) 
+        return (temp_list[index]+temp_list[index-1])/2 #need to minus 1 as list index starts from 0
+
 List = get_user_input()
 print(calc_average_temp(List))
 sorted_list=sort_temp(List)
 print(cal_min_max_temp(sorted_list))
+print(cal_median_temp(sorted_list))
