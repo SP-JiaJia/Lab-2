@@ -15,7 +15,7 @@ def sort_temp(temp_list):
     return sorted(temp_list)
 
 def cal_min_max_temp(temp_list):
-    return [int(temp_list[0]), int(temp_list[-1])]
+    return [min(temp_list), max(temp_list)]
 
 def cal_median_temp(temp_list):
     #print(temp_list)
