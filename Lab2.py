@@ -30,3 +30,9 @@ print(calc_average_temp(List))
 sorted_list=sort_temp(List)
 print(cal_min_max_temp(sorted_list))
 print(cal_median_temp(sorted_list))
+
+def main():
+    print("Here is the main program")
+
+if __name__ == "main":
+    main()
