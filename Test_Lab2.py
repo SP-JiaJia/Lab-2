@@ -1,4 +1,4 @@
-import Lab2.Lab2 as Lab2
+import Lab2
 
 def test_find_MinMax():
     result = []
@@ -13,7 +13,7 @@ def test_average_temp():
     result=0
     input=[10, 2, 2.2, 3]
     
-    result=Lab2.cal_average_temp(input)
+    result=Lab2.calc_average_temp(input)
     
     assert(result == 4.3)
 

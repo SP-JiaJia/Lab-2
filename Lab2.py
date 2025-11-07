@@ -25,14 +25,8 @@ def cal_median_temp(temp_list):
         index=int(len(temp_list)/2) 
         return (temp_list[index]+temp_list[index-1])/2 #need to minus 1 as list index starts from 0
 
-List = get_user_input()
-print(calc_average_temp(List))
-sorted_list=sort_temp(List)
-print(cal_min_max_temp(sorted_list))
-print(cal_median_temp(sorted_list))
-
 def main():
     print("Here is the main program")
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
